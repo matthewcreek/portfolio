@@ -6,11 +6,6 @@ const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
 })
-const montserrat = Montserrat({ 
-  weight: ['400'], 
-  subsets: ['latin'],
-  variable: '--font-montserrat'
-})
 
 export const metadata: Metadata = {
   title: 'Matthew Creek',
@@ -24,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${montserrat.className}`}>{children}</body>
+      <body className={inter.className}>{children}</body>
     </html>
   )
 }

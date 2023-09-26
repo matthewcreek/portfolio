@@ -1,3 +1,4 @@
+import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import Resume from "./Pages/Resume";
 
@@ -6,6 +7,7 @@ export default function Home() {
     <main>
       <Navbar />
       <Resume />
+      <Footer />
     </main>
   )
 }
