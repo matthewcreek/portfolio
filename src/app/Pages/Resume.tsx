@@ -7,7 +7,7 @@ import mail from '../../../public/Images/icons8-mail-100.png'
 
 export default function Resume() {
     return (
-        <div className='flex justify-center'>
+        <div className='flex justify-center mt-2'>
             <div className='max-w-4xl'>
                 <div className="flex flex-col items-center leading-6">
                     <h1 className="w-full text-5xl text-center text-red-900 font-bold pb-2 border-b-4 border-red-800">Matthew Creek</h1>

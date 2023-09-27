@@ -7,9 +7,9 @@ export default function Navbar() {
             <div className="flex flex-col items-center bg-[#5f0003] py-4">
                 <Image src={headshot} alt="Photo of Matthew Creek" className="w-1/6 rounded-full h-auto shadow-lg shadow-gray-400/90"/>
                 <div className="max-w-4xl px-4 flex justify-around w-full mt-4 text-gray-200 font-bold text-2xl">
-                    <h3 className="w-1/6 text-center py-2 hover:bg-gray-600 rounded-xl border-2 border-gray-200 hover:shadow-[5px_10px_20px_-8px] hover:shadow-gray-400">Resume</h3>
-                    <h3 className="w-1/6 text-center py-2 hover:bg-gray-600 rounded-xl border-2 border-gray-200 hover:shadow-[5px_10px_20px_-8px] hover:shadow-gray-400">Projects</h3>
-                    <h3 className="w-1/6 text-center py-2 hover:bg-gray-600 rounded-xl border-2 border-gray-200 hover:shadow-[5px_10px_20px_-8px] hover:shadow-gray-400">Bio</h3>
+                    <h3 className="w-1/6 text-center py-2">Resume</h3>
+                    <h3 className="w-1/6 text-center py-2">Projects</h3>
+                    <h3 className="w-1/6 text-center py-2">Bio</h3>
                 </div>
             </div>
         </div>
