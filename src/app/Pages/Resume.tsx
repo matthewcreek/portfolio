@@ -14,7 +14,7 @@ export default function Resume() {
                     <h3 className="text-xl py-2 font-semibold">Software engineer in St. Louis, MO</h3>
                     <p className="max-w-xl text-center">Seeking placement with a team that promotes growth in a highly changing field, working to solve problems creatively and efficiently.</p>
                 </div>
-                <div className="flex justify-center border">
+                <div className="flex justify-center">
                     <div className='p-2 flex justify-around w-1/2 items-center'>
                         {/* <Image className='w-16 h-auto' src={phone} alt='Phone Icon' /> */}
                         <a href='mailto: matthew.creek27+dev@gmail.com'>
@@ -32,7 +32,7 @@ export default function Resume() {
                     <div className='w-2/3 p-2 flex flex-col'>
                         <div>
                             <h2 className='font-bold text-red-900 border-b-4 border-red-800'>PROJECT EXPERIENCE</h2>
-                            <p><span className='font-bold text-red-900'>Recipe Hive</span> -- ReactJS with Java Spring Boot SQL Database (LC101 Capstone Project)</p>
+                            <p className='pt-2'><span className='font-bold text-red-900'>Recipe Hive</span> -- ReactJS with Java Spring Boot SQL Database (LC101 Capstone Project)</p>
                             <ul className='list-disc pl-8 pb-4'>
                                 <li>Mobile-friendly web app where users can add, view, edit, and remove their favorite recipes with search functionality using keywords.</li>
                                 <li>Frontend written in JavaScript with React. Designed and styled using principles of atomic design. Utilizing Axios to make HTTP calls to a REST API secured with protected routing and JWT.</li>
@@ -41,7 +41,7 @@ export default function Resume() {
                         </div>
                         <div>
                             <h2 className='font-bold text-red-900 border-b-4 border-red-800'>WORK EXPERIENCE</h2>
-                            <p><span className='font-bold text-red-900'>Studio Manager</span> -- Shock City Studios, St. Louis, MO</p>
+                            <p className='pt-2'><span className='font-bold text-red-900'>Studio Manager</span> -- Shock City Studios, St. Louis, MO</p>
                             <p>May 2015 - Present</p>
                             <ul className='list-disc pl-8 pb-4'>
                                 <li>Led a growing team of audio engineers through daily challenges of customer service, accounting, scheduling, and problem solving.</li>
@@ -53,7 +53,7 @@ export default function Resume() {
                         </div>
                         <div>
                             <h2 className='font-bold text-red-900 border-b-4 border-red-800'>EDUCATION</h2>
-                            <p><span className='font-bold text-red-900'>LaunchCode,</span> LC101 Programming Course -- 2023</p>
+                            <p className='pt-2'><span className='font-bold text-red-900'>LaunchCode,</span> LC101 Programming Course -- 2023</p>
                             <p><span className='font-bold text-red-900'>Webster University,</span> BFA, Audio Engineering -- 2013</p>
                         </div>
                     </div>
@@ -90,7 +90,7 @@ export default function Resume() {
                         </div>
                         <div>
                             <h2 className='font-bold text-red-900 border-b-4 border-red-800'>AWARDS</h2>
-                            <div>
+                            <div className='pt-2'>
                                 <h3 className='font-bold text-red-900'>Better Business Bureau&apos;s Torch Award (2016 & 2021)</h3>
                                 <p>Celebrating exceptional ethics and service</p>
                             </div>
