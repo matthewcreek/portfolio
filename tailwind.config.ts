@@ -13,6 +13,21 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      animation: {
+        fade: 'fadeIn 3s linear',
+        slide: 'slide 3s linear',
+        both: 'slide 3s linear',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity:'0%' },
+          '100%': { opacity:'100%' },
+        },
+        slide: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(0%)' },
+        },
+      },
     },
   },
   plugins: [],
