@@ -1,12 +1,15 @@
-import Image from 'next/image'
+import Image from "next/image"
 
+import mail from '../../../public/Images/icons8-mail-100.png'
 import github from '../../../public/Images/github-mark.png'
 import linkedin from '../../../public/Images/LinkedIn-Logos/LI-In-Bug.png'
-import mail from '../../../public/Images/icons8-mail-100.png'
+import Navbar from "../../Components/Navbar"
+import Footer from "../../Components/Footer"
 
-export default function Resume() {
+export default function Page() {
     return (
         <>
+            <Navbar />
             <div className='hidden sm:flex justify-center mt-2'>
                 <div className='max-w-4xl'>
                     <div className="flex flex-col items-center leading-6">
@@ -190,6 +193,10 @@ export default function Resume() {
                     </div>
                 </div>
             </div>
+            <div className="w-full bg-[#5f0003] flex flex-col justify-center items-center pt-2">
+                <p className="text-gray-400 font-thin"><a target="_blank" href="https://icons8.com/icon/124379/circled-envelope">Mail</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+            </div>
+            <Footer />
         </>
     )
 }

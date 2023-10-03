@@ -15,8 +15,8 @@ const config: Config = {
       },
       animation: {
         fade: 'fadeIn 1.5s linear',
-        slideIn: 'slideIn .5s linear',
-        slideOut: 'slideOut .5s linear',
+        slideIn: 'slideIn .3s linear',
+        slideOut: 'slideOut .3s linear',
         both: 'slide 3s linear',
       },
       keyframes: {

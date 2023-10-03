@@ -1,14 +1,13 @@
 
 
-import Footer from "./Components/Footer";
-import Navbar from "./Components/Navbar";
-import Resume from "./Pages/Resume";
+import Footer from "../Components/Footer";
+import Navbar from "../Components/Navbar";
 
 export default function Home() {
   return (
     <main>
       <Navbar />
-      <Resume />
+      <h1>landing</h1>
       <Footer />
     </main>
   )
