@@ -1,7 +1,31 @@
+'use client';
+
+import { useState, useRef, useEffect } from 'react'
 import Image from "next/image";
 import headshot from "../../../public/Images/headshot.jpg"
 
 export default function Navbar() {
+    const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
+    const ref = useRef();
+
+    useEffect(() => {
+         const checkIfClickedOutside = e => {
+            if (isHamburgerOpen && ref.current && !ref.current.contains(e.target)) {
+                setIsHamburgerOpen(false)
+            }
+         }
+         document.addEventListener('mousedown', checkIfClickedOutside)
+
+         return () => {
+            document.removeEventListener('mousedown', checkIfClickedOutside)
+         }
+    }, [isHamburgerOpen])
+
+    function handleMenu(){
+        setIsHamburgerOpen(!isHamburgerOpen)
+        console.log(isHamburgerOpen)
+    }
+
     return (
         <div>
             <div className="flex sm:flex-col sm:items-center items-center justify-between px-8 bg-[#5f0003] py-4">
@@ -11,11 +35,16 @@ export default function Navbar() {
                     <h3 className="w-1/6 text-center py-2">Projects</h3>
                     <h3 className="w-1/6 text-center py-2">Resume</h3>
                 </div>
-                <button className="text-gray-200 w-8 h-8 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" stroke="currentColor" className="w-6 h-6">
+                <button className="text-gray-300 w-8 h-8" onClick={handleMenu} ref={ref}>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-full h-full">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                     </svg>
                 </button>
+                <div className={isHamburgerOpen ? 'absolute float-right w-full bg-gray-800 text-gray-200' : 'hidden'}>
+                    <p>Home</p>
+                    <p>Projects</p>
+                    <p>Resume</p>
+                </div>
             </div>
         </div>
     )
