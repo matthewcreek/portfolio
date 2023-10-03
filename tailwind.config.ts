@@ -14,8 +14,9 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       animation: {
-        fade: 'fadeIn 3s linear',
-        slide: 'slide 3s linear',
+        fade: 'fadeIn 1.5s linear',
+        slideIn: 'slideIn .5s linear',
+        slideOut: 'slideOut .5s linear',
         both: 'slide 3s linear',
       },
       keyframes: {
@@ -23,9 +24,13 @@ const config: Config = {
           '0%': { opacity:'0%' },
           '100%': { opacity:'100%' },
         },
-        slide: {
-          '0%': { transform: 'translateX(-100%)' },
-          '100%': { transform: 'translateX(0%)' },
+        slideIn: {
+          '0%': { transform: 'translateY(-100%)' },
+          '100%': { transform: 'translateY(0%)' },
+        },
+        slideOut: {
+          '0%': { transform: 'translateY(+100%)' },
+          '100%': { transform: 'translateY(0%)' },
         },
       },
     },
