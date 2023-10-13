@@ -28,15 +28,15 @@ export default function Home() {
         setIsLoaded(true)
     }
   return (
-    <main className='h-screen'>
-      <div className="bg-[#5f0003]">
+    <main className='h-screen bg-[#5f0003]'>
+  
         <div className='flex justify-end p-4'>
           <button className="text-gray-400 w-8 h-8" onClick={handleMenu} ref={ref}>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-full h-full">
               <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
               </svg>
           </button>
-          <div className={isHamburgerOpen ? 'sm:hidden absolute top-0 left-0 w-full h-16 bg-gray-800 text-gray-200 animate-slideIn' : isLoaded ? 'sm:hidden absolute -top-16 left-0 w-full h-16 bg-gray-800 text-gray-200 animate-slideOut' : 'sm:hidden absolute -top-16 left-0 w-full h-16 bg-gray-800 text-gray-200'}>
+          <div className={isHamburgerOpen ? 'absolute top-0 left-0 w-full h-16 bg-gray-800 text-gray-200 animate-slideIn' : isLoaded ? 'absolute -top-16 left-0 w-full h-16 bg-gray-800 text-gray-200 animate-slideOut' : 'absolute -top-16 left-0 w-full h-16 bg-gray-800 text-gray-200'}>
               <div className='flex justify-around items-center mr-4 py-2 text-xl rounded-lg h-full'>
                   <Link href={`/`}>Home</Link>
                   <Link href={`/projects`}>Projects</Link>
@@ -44,8 +44,8 @@ export default function Home() {
               </div>
           </div>
         </div>
-      </div>
-      <div className='h-full bg-[#5f0003] flex flex-col justify-center align-center'>
+      
+      <div className='h-full flex flex-col justify-center align-center bg-[#5f0003]'>
         <div className='flex justify-center'>
           <Image src={headshot} alt='Matthew Creek photo' className='w-2/3 sm:w-1/3 h-auto rounded-full border-4 border-[#2f928f]'></Image>
         </div>
