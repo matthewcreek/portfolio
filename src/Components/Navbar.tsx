@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef, useEffect, MouseEventHandler, MouseEvent } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import Image from "next/image";
 import headshot from '../../public/Images/headshot.jpg'
 import Link from 'next/link';
